@@ -15,7 +15,7 @@ The attribute has 3 versions:
 
 3) The version to find components on GameObjects in the scene
 
-There is one important thing that applies to <b>all</b> versions of the attribute: The script that you are using it in has to extend AutofindComponent instead of MonoBehaviour, because it has a special version of Awake(). If you want to use the Awake() method in you own code, make sure to override it correctly and add a base.Awake(); in the first line in the method.
+There is one important thing that applies to <b>all</b> versions of the attribute: The script that you are using it in has to extend AutofindBehaviour instead of MonoBehaviour, because it has a special version of Awake(). If you want to use the Awake() method in you own code, make sure to override it correctly and add a base.Awake(); in the first line in the method.
 
 # 1)
 You simply add the attribute above a field that is the type of a component. It will automatically assign the searched component in the Awake() method.
